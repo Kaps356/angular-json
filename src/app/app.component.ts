@@ -15,4 +15,8 @@ export class AppComponent {
       this.arr = Array.from(Object.keys(data), k => data[k]);
     });
   }
+
+  sendData() {
+    this.service.postDataonServer(1, "Kalpesh", 99000);
+  }
 }

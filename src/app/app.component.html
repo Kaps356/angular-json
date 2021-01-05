@@ -1,8 +1,12 @@
 <h1>This is JSON Server Example</h1>
 <ul>
-  <li>Home</li>
-  <li>About</li>
-  <li>Contact</li>
+	<li>Home</li>
+	<li>About</li>
+	<li>Contact</li>
 </ul>
 
 <li *ngFor="let i of arr">{{i.email+"<<<< >>>>"+i.username}}</li>
+
+<hr>
+
+<button (click)="sendData()">Send</button>
